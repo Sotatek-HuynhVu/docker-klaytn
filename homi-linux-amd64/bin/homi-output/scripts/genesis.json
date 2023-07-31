@@ -1,0 +1,32 @@
+{
+    "config": {
+        "chainId": 1000,
+        "istanbulCompatibleBlock": 0,
+        "londonCompatibleBlock": 0,
+        "ethTxTypeCompatibleBlock": 0,
+        "magmaCompatibleBlock": 0,
+        "koreCompatibleBlock": 0,
+        "kip103CompatibleBlock": 0,
+        "kip103ContractAddress": "0x0000000000000000000000000000000000000000",
+        "istanbul": {
+            "epoch": 604800,
+            "policy": 0,
+            "sub": 21
+        },
+        "unitPrice": 0,
+        "deriveShaImpl": 0,
+        "governance": null
+    },
+    "timestamp": "0x64365c16",
+    "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000f85ad59465b47be3457ff26f2911cf89fd079cef0475a2e6b8410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0",
+    "governanceData": null,
+    "blockScore": "0x1",
+    "alloc": {
+        "65b47be3457ff26f2911cf89fd079cef0475a2e6": {
+            "balance": "0x446c3b15f9926687d2c40534fdb564000000000000"
+        }
+    },
+    "number": "0x0",
+    "gasUsed": "0x0",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+}
