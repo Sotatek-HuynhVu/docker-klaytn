@@ -1,0 +1,14 @@
+version: '3'
+services:
+  kcnd-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kcnd-node
+    restart: always
+    container_name: kcnd-node
+    ports:
+      - "8556:8556"
+    volumes:
+      # - ./logs:/app/kcn-linux-amd64/data/logs
+      - ./:/app
