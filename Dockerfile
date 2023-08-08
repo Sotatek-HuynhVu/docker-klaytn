@@ -1,5 +1,5 @@
 # Use Ubuntu 20.04 as the base image
-FROM centos:centos7
+FROM ubuntu:20.04
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 # Install necessary tools
@@ -44,10 +44,10 @@ RUN sed -i "s/^NETWORK_ID=.*/NETWORK_ID=${NETWORK_ID}/" /app/kcn-linux-amd64/con
     # sed -i "s#^RPC_PORT=.*#RPC_PORT=${RPC_PORT}#" /app/kcn-linux-amd64/conf/kcnd.conf
 
 # # Step 6: Initialize with genesis.json
-# RUN /app/kcn-linux-amd64/bin/kcn init --datadir /app/kcn-linux-amd64/data /app/kcn-linux-amd64/data/genesis.json
+RUN /app/kcn-linux-amd64/bin/kcn init --datadir /app/kcn-linux-amd64/data /app/kcn-linux-amd64/data/genesis.json
 
 # Step 7: Start KCN
-EXPOSE 8556
+EXPOSE 8551
 
 # CMD ["RUN", "entrypoint.sh"]
 ENTRYPOINT ["entrypoint.sh"]
